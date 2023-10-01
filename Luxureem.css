@@ -1,0 +1,94 @@
+body{
+    background-image: url(BG.jpg);
+}
+.menu{
+    background-color: black;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    width: 90rem;
+    height: 3rem;
+    color: white;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.menu ul ul li a{
+    color: white;
+}
+.menu ul li{
+    display: inline;
+    width: 7rem;
+    margin: 4.5rem;
+    padding: 0.6rem;
+}
+.menu ul li a{
+    color: blue;
+}
+.menu ul ul{
+    background-image: url(ul-BG.jpg);
+    position: absolute;
+    display: none;
+    top: 100%;
+    padding: 0;
+    box-shadow: 6px 10px 15px 7px black;
+}
+.menu ul ul li:hover{
+    background-color: #800020;
+}
+.menu ul li:hover ul{
+    display: inline;
+}
+.menu ul li:hover ul li{
+    display: flex;
+    margin: 0.6rem;
+    padding: 0;
+}
+.active, .menu ul li:hover{
+    background: white;
+    border-radius: 3px;
+}
+.logo{
+    border: 0.5rem solid white;
+    width: 10rem; 
+    height: 10rem;
+    margin: 0;
+    padding: 0;
+    position: static;
+    float: left;
+}
+.Note #li1{
+    background-color: #FFFDD0;
+    width: 15rem;
+    position: static;
+    margin-top: 5%;
+}
+.Note #li2{
+    background-color: #FFFDD0;
+    width: 2.5rem;
+    position: static;
+    margin-top: 3%;
+}
+.Note #li3{
+    background-color: #FFFDD0;
+    width: 15rem;
+    position: static;
+    margin-top: 3%;
+}
+.about{
+    background-color: #063B70;
+    color: white;
+    height: 100%;
+    font-size: 2rem;
+    margin-top: 3%;
+}
+@media screen and (max-width: 13rem){
+    .logo{
+        flex-flow: row wrap;
+        width: 100%;
+    }
+    
+}
