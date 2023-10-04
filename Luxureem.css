@@ -85,7 +85,6 @@ a{
     font-size: 2rem;
     margin-top: 3%;
 }
-<<<<<<< HEAD
 @media screen and (max-width: 700px){
     .logo{
         margin-top: 10%;
@@ -94,5 +93,3 @@ a{
         float: unset;
     }
 }
-=======
->>>>>>> 11dd8d1c2580afaf7ac8d6ecddf7b9a5e948e6bf
