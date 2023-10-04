@@ -85,10 +85,11 @@ a{
     font-size: 2rem;
     margin-top: 3%;
 }
-@media screen and (max-width: 13rem){
+@media screen and (max-width: 700px){
     .logo{
-        flex-flow: row wrap;
-        width: 100%;
+        margin-top: 10%;
+        width: 300px;
+        height: 300px;
+        float: unset;
     }
-    
 }
