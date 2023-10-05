@@ -85,14 +85,24 @@ a{
     font-size: 2rem;
     margin-top: 3%;
 }
-<<<<<<< HEAD
 @media screen and (max-width: 700px){
     .logo{
-        margin-top: 10%;
+        margin: auto;
+        margin-top: 20%;
         width: 300px;
         height: 300px;
         float: unset;
     }
+    .Note #li1{
+        font-size: 20px;
+        width: 350px;
+    }
+    .Note #li2{
+        font-size: 20px;
+        width: 100px;
+    }
+    .Note #li3{
+        font-size: 20px;
+        width: 350px;
+    }
 }
-=======
->>>>>>> 11dd8d1c2580afaf7ac8d6ecddf7b9a5e948e6bf
