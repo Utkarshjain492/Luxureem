@@ -1,17 +1,45 @@
 body{
     background-image: url(BG.jpg);
 }
+@font-face{
+    font-family: myFont;
+    src: url(GreatVibes-Regular.ttf);
+}
+.name{
+    font-family: myFont;
+    font-size: 40px;
+    margin: 15px;
+    padding: 5px;
+    margin-top: 5px;
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    left: 0;
+}
+#checkbtn{
+    display: none;
+    float: right;
+    margin-right: 40px;
+    line-height: 50px;
+    font-size: 30px;
+}
 .menu{
     background-color: black;
     top: 0;
-    left: 0;
     padding: 0;
     margin: 0;
     position: fixed;
-    width: 90rem;
+    width: 100%;
     height: 3rem;
     color: white;
     list-style: none;
+    border: 1px solid transparent;
+}
+.menu ul{
+    float: right;
+    margin-right: 3rem;
 }
 a{
     text-decoration: none;
@@ -20,13 +48,14 @@ a{
     color: white;
 }
 .menu ul li{
-    display: inline;
+    display: inline-block;
+    line-height: 5px;
     width: 7rem;
-    margin: 4.5rem;
+    margin: 1px;
     padding: 0.6rem;
 }
 .menu ul li a{
-    color: blue;
+    color: white;
 }
 .menu ul ul{
     background-image: url(ul-BG.jpg);
@@ -36,8 +65,13 @@ a{
     padding: 0;
     box-shadow: 6px 10px 15px 7px black;
 }
+.menu ul ul li{
+    height: 20px;
+}
 .menu ul ul li:hover{
     background-color: #800020;
+    height: 20px;
+    align-items: center;
 }
 .menu ul li:hover ul{
     display: inline;
@@ -48,8 +82,11 @@ a{
     padding: 0;
 }
 .active, .menu ul li:hover{
-    background: white;
-    border-radius: 3px;
+    background: blue;
+    border-radius: 5px;
+}
+.mobile-nav-icon{
+    display: none;
 }
 .logo{
     border: 0.5rem solid white;
@@ -85,7 +122,35 @@ a{
     font-size: 2rem;
     margin-top: 3%;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1040px){
+    .menu ul{
+        width: 100vw;
+        height: 100vh;
+        font-size: 20px;
+        margin: 0;
+        background-color: blue;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        left: -150%;
+        transition: .5s;
+    }
+    .menu ul li{
+        display: block;
+        margin: 80px;
+        padding: 30px;
+        width: 60%;
+        text-align: center;
+    }
+    #checkbtn{
+        display: block;
+    }
+}
+@media screen and (max-width: 950px){
+    .name{
+        font-size: 35px;
+        padding: 20px;
+    }
     .logo{
         margin: auto;
         margin-top: 20%;
