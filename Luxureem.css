@@ -131,16 +131,19 @@ a{
         background-color: blue;
         position: fixed;
         top: 50px;
-        left: 0;
         left: -150%;
         transition: .5s;
     }
     .menu ul li{
         display: block;
-        margin: 80px;
+        margin: 50px;
         padding: 20px;
         width: 40%;
         text-align: center;
+    }
+    .menu ul ul{
+        position: relative;
+        width: 100px;
     }
     #checkbtn{
         display: block;
