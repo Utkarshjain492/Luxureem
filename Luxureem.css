@@ -32,14 +32,14 @@ body{
     margin: 0;
     position: fixed;
     width: 100%;
-    height: 3rem;
+    height: 55px;
     color: white;
     list-style: none;
     border: 1px solid transparent;
 }
 .menu ul{
     float: right;
-    margin-right: 3rem;
+    margin-right: 60px;
 }
 a{
     text-decoration: none;
@@ -50,9 +50,9 @@ a{
 .menu ul li{
     display: inline-block;
     line-height: 5px;
-    width: 7rem;
+    width: 110px;
     margin: 1px;
-    padding: 0.6rem;
+    padding: 10px;
 }
 .menu ul li a{
     color: white;
@@ -78,7 +78,7 @@ a{
 }
 .menu ul li:hover ul li{
     display: flex;
-    margin: 0.6rem;
+    margin: 10px;
     padding: 0;
 }
 .active, .menu ul li:hover{
@@ -89,9 +89,9 @@ a{
     display: none;
 }
 .logo{
-    border: 0.5rem solid white;
-    width: 10rem; 
-    height: 10rem;
+    border: 8px solid white;
+    width: 160px; 
+    height: 160px;
     margin: 0;
     padding: 0;
     position: static;
@@ -99,19 +99,19 @@ a{
 }
 .Note #li1{
     background-color: #FFFDD0;
-    width: 15rem;
+    width: 240px;
     position: static;
     margin-top: 5%;
 }
 .Note #li2{
     background-color: #FFFDD0;
-    width: 2.5rem;
+    width: 40px;
     position: static;
     margin-top: 3%;
 }
 .Note #li3{
     background-color: #FFFDD0;
-    width: 15rem;
+    width: 240px;
     position: static;
     margin-top: 3%;
 }
@@ -119,13 +119,13 @@ a{
     background-color: #063B70;
     color: white;
     height: 100%;
-    font-size: 2rem;
+    font-size: 40px;
     margin-top: 3%;
 }
 @media screen and (max-width: 1040px){
     .menu ul{
-        width: 100vw;
-        height: 100vh;
+        width: 110vw;
+        height: 110vh;
         font-size: 20px;
         margin: 0;
         background-color: blue;
@@ -138,12 +138,16 @@ a{
         display: block;
         margin: 50px;
         padding: 20px;
-        width: 40%;
+        width: 60%;
         text-align: center;
     }
     .menu ul ul{
-        position: relative;
-        width: 100px;
+        position: static;
+        width: 200px;
+        clear: both;
+    }
+    .menu ul ul li{
+        width: 200px;
     }
     #checkbtn{
         display: block;
@@ -172,5 +176,9 @@ a{
     .Note #li3{
         font-size: 20px;
         width: 350px;
+    }
+    .about{
+        max-width: 100%;
+        text-align: center;
     }
 }
